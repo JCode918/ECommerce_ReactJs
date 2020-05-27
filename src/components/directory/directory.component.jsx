@@ -57,5 +57,8 @@ class Directory extends React.Component{
         )
     }
 }
+/*
+...otherSectionProps holds the imageUrl, title, size, linkUrl ES6 spread operator
+*/
 
 export default Directory;
