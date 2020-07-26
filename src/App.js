@@ -12,12 +12,6 @@ import { auth } from "./firebase/firebase.utils";
 import "./homepage.styles.scss";
 import "./App.css";
 
-/* const HatsPage = () => (
-  <div>
-    <h1> Hats Page</h1>
-  </div>
-); */
-
 class App extends React.Component {
   constructor() {
     super();
@@ -33,7 +27,7 @@ class App extends React.Component {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
       this.setState({currentUser : user})
 
-      console.log(user)
+      console.log(user) // Shows the user that is logged in
     })
   }
 
